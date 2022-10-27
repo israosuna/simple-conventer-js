@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--Code By Webdevtrick ( https://webdevtrick.com )-->
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+  <title>JavaScript Currency Converter</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+	<h1 >Calculadora de cambios</h1>
+	<div class="currency">
+		<select class="from_currency" id="from_currency">
+			<option  value="USD" >USD </option>
+			<option selected value="PAYPAL">PayPal</option>
+			<option value="PAYONEER">Payoneer</option>
+			<option value="SKRILL">Skrill</option>
+			<option value="NETELLER">Neteller</option>
+			<option value="UPHOLD">UpHold</option>
+			<option value="PAYEER">Payeer</option>
+			<option value="AIRTM">AirTM</option>
+			<option value="USD-INTL">Transferencia Intl.</option>
+			<option value="COP">Pesos Colombianos</option>
+			<option value="CLP">Pesos Chilenos</option>
+			<option value="CRYPTO">Crypto Monedas</option>
+/		</select>
+		<input type="number" id="from_ammount"  placeholder="0.00" value="1" />
+	</div>
+	<div class="middle">
+		<div class="icon" id="icon"> </div>
+
+		<button disabled id="exchange">
+			<i class="fas fa-exchange-alt"></i>
+		</button>
+		<div class="rate" id="rate"></div>
+
+	</div>
+	<div class="currency">
+		<select  id="to_currency">
+			<option style="display: none;" class="noselect" value="Bs." selected disabled >Bolivares - Bs.</option>
+
+		</select>
+		<input type="number"   id="to_ammount" placeholder="0" />
+
+	</div>
+				<h1 >Monto a recibir en bolivares</h1>
+
+</div>
+ <!-- <script  src="function.js"></script> --> 
+ <script type="text/javascript" src="js/function.js"></script>
+
+</body>
+</html>

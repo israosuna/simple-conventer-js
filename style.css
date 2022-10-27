@@ -1,0 +1,164 @@
+/* Code By Webdevtrick ( https://webdevtrick.com ) */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+* {
+	box-sizing: border-box;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	  -webkit-user-select: none; /* Safari */
+	   -khtml-user-select: none; /* Konqueror HTML */
+		 -moz-user-select: none; /* Old versions of Firefox */
+		  -ms-user-select: none; /* Internet Explorer/Edge */
+			  user-select: none; /* Non-prefixed version, currently
+									supported by Chrome, Edge, Opera and Firefox */
+  }
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+body {
+	background: linear-gradient(to bottom, #161717 0%, #161717 50%, #6c6f6f 50%, #6c6f6f 100%);
+	font-family: 'Muli', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+.container {
+	margin: 0;
+	width: auto;
+}
+.container h1{
+
+	color: white;
+	text-align: center;
+	font-size: 25px
+}
+.container h1 .left{
+
+	text-align: right;
+}
+.currency {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.container h1 {
+
+	text-align: center;
+	font-size: 28px;
+	color: white;
+	
+}
+
+.currency select {
+/*background-color: transparent;	text-align: center;
+    background-repeat: no-repeat, repeat;
+    background-position: right .2em top 50%, 0 0;
+    background-size: .50em auto, 100%;
+	border: 0;
+	padding-right: 20px;
+	font-size: 28px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+	appearance: none;
+	padding: 2rem;*/
+	position: relative;
+	color: #ffffff;
+	padding: 16px 16px;
+	border: 1px solid transparent;
+	border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+	cursor: pointer;
+	user-select: none;
+	background-color: DodgerBlue;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	-moz-appearance: none;
+    -webkit-appearance: none;
+	appearance: none;
+	width: 250px;
+	height: 60px;
+	margin: 2rem;
+	font-size: 22px;
+	text-align: right;
+	
+
+}
+.contenedor-responsivo {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+.iframe-responsivo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.currency input {
+	height: 60px;
+	font-size: 28px;
+	text-align: right;
+	border: 2px solid DodgerBlue ;
+	width: auto;
+}
+.middle {
+	color: #131313;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.middle button {
+	background-color: #fff;
+	border: 2px solid #ecf0f1;
+	border-radius: 50%;
+	cursor: pointer;
+	color: #222222;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	width: 30px;
+	transform: rotate(90deg);
+}
+.middle button:active {
+	transform: rotate(90deg) scale(0.9);
+}
+.middle .rate {
+	background-color: #fff;
+	border: 2px solid black;
+	border-radius: 25px;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	padding: 0 10px;
+	margin: 30px 15px 30px 25px;
+}
+.middle .icon  img{
+	height: 96px;
+	width: 96px;
+	border-radius: 50px;
+	border:3px solid rgb(255, 255, 255);
+	background-color: white;
+	margin-left:110px;
+	
+}
+
+select:focus, input:focus, button:focus {
+	outline: 0;
+}
